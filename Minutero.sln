@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minutero", "Minutero\Minutero.csproj", "{3E15897A-1C45-48CE-BD6F-8AE251FF66DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soporte", "Soporte\Soporte.csproj", "{71F9402B-C59F-4AAA-B889-8427898E7C20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dal", "Dal\Dal.csproj", "{F415135A-D8BD-44EA-A168-9FDCCD3C4FB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{7D8392C1-ECCF-48D5-ACA0-9AB9000C148F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinuteroWeb", "MinuteroWeb\MinuteroWeb.csproj", "{A67EF090-C5C3-470F-AEB7-64711594CE91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{689F22B7-6BBA-4733-81C1-5B93DAC7D5BD}"
+	ProjectSection(SolutionItems) = preProject
+		Sql\Minutero - Current DB Model.sql = Sql\Minutero - Current DB Model.sql
+		Sql\Minutero - Data.sql = Sql\Minutero - Data.sql
+		Sql\Minutero - Objects.sql = Sql\Minutero - Objects.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E15897A-1C45-48CE-BD6F-8AE251FF66DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E15897A-1C45-48CE-BD6F-8AE251FF66DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E15897A-1C45-48CE-BD6F-8AE251FF66DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E15897A-1C45-48CE-BD6F-8AE251FF66DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71F9402B-C59F-4AAA-B889-8427898E7C20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71F9402B-C59F-4AAA-B889-8427898E7C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71F9402B-C59F-4AAA-B889-8427898E7C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71F9402B-C59F-4AAA-B889-8427898E7C20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F415135A-D8BD-44EA-A168-9FDCCD3C4FB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F415135A-D8BD-44EA-A168-9FDCCD3C4FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F415135A-D8BD-44EA-A168-9FDCCD3C4FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F415135A-D8BD-44EA-A168-9FDCCD3C4FB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D8392C1-ECCF-48D5-ACA0-9AB9000C148F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D8392C1-ECCF-48D5-ACA0-9AB9000C148F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D8392C1-ECCF-48D5-ACA0-9AB9000C148F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D8392C1-ECCF-48D5-ACA0-9AB9000C148F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A67EF090-C5C3-470F-AEB7-64711594CE91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A67EF090-C5C3-470F-AEB7-64711594CE91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A67EF090-C5C3-470F-AEB7-64711594CE91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A67EF090-C5C3-470F-AEB7-64711594CE91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B41B953-9092-4D64-9F60-60F3C0F165F5}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.hexacta.com/fangorn
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Dal\\Dal.csproj
+		SccProjectName1 = Dal
+		SccLocalPath1 = Dal
+		SccProjectUniqueName2 = Dominio\\Dominio.csproj
+		SccProjectName2 = Dominio
+		SccLocalPath2 = Dominio
+		SccProjectUniqueName3 = Minutero\\Minutero.csproj
+		SccProjectName3 = Minutero
+		SccLocalPath3 = Minutero
+		SccProjectUniqueName4 = MinuteroWeb\\MinuteroWeb.csproj
+		SccProjectName4 = MinuteroWeb
+		SccLocalPath4 = MinuteroWeb
+		SccProjectUniqueName5 = Soporte\\Soporte.csproj
+		SccProjectName5 = Soporte
+		SccLocalPath5 = Soporte
+	EndGlobalSection
+EndGlobal

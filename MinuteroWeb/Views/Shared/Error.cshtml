@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Error";
+}
+@model System.Exception
+@Styles.Render("~/Content/Error.css") 
+
+<body>
+    <div class="wrapper container-fluid">
+        <div id="contenedor" class="container-fluid no-padding ng-scope">
+            <div class="row partialCentrado">
+                <h1 class="error">Error</h1>
+                <div class="alert alert-danger">
+                    <h3 class="error">@Model.Message</h3>
+                </div>
+            </div>
+            <div class="row partialCentrado">
+                <div class="alert alert-info">
+                    <h4> Stack Trace:</h4>
+                    <h5 class="error">@Model.StackTrace</h5>
+                </div>
+            </div>
+            <div class="row partialCentrado">
+                <form><input type="button" value="Back" onclick="history.go(-1);return true;"></form>
+            </div>
+        </div>
+    </div>
+</body>
+

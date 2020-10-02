@@ -1,0 +1,1 @@
+Server=hxsqldev02\sql2012;Database=Minutero;User Id=minutero;Password=minutascorvel

@@ -1,0 +1,16 @@
+﻿.row.espacioEnBlanco {
+    height:500px;
+}
+
+.contenidoCentrado {
+    text-align:center;
+}
+
+#botonActualizar {
+     margin-top:15px;
+}
+
+.boton-grilla {
+    height:10px;
+    width:10px;
+}

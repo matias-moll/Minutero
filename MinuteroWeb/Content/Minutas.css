@@ -1,0 +1,220 @@
+﻿/*** General: Begin ***/
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #dde0e6;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+/*** General: End ***/
+
+/*** Color: Begin ***/
+.background-green {
+    background: rgb(0, 128, 0);
+}
+
+.green {
+    color: rgb(0, 128, 0);
+}
+
+.red {
+    color: rgb(255, 0, 0);
+}
+/*** Color: End ***/
+
+/*** Fonts: Begin ***/
+h5 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/*** Fonts: End ***/
+
+/*** Bootstrap custom: Begin ***/
+.navbar {
+    border: 0;
+    border-bottom: solid 1px #e7e7e7;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-left: solid 1px #ccc;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 0;
+}
+
+.navbar-header {
+    padding-right: 12px;
+}
+
+.nav > li > a {
+    background: #fff;
+    border: 1px solid #2e99fa;
+    color: #2e99fa;
+    padding: 8px 14px;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    background-color: #2e99fa;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: #dcdcdc;
+    color: #999;
+    text-decoration: none;
+}
+
+.nav-pills > li + li {
+    margin-left: 8px;
+}
+
+.navbar-default {
+    border-radius: 0;
+    margin-bottom: 0;
+    min-height: 60px;
+    padding-top: 8px;
+}
+
+.navbar-brand {
+    background: url(../Images/minutero.png) no-repeat;
+    height: 38px;
+    margin-left: 0;
+    padding: 0;
+    text-indent: -9999px;
+    width: 148px;
+}
+/*** Bootstrap custom: End ***/
+
+/*** Font Awesome: Begin ***/
+.glyphicon-user {
+    background: #666666;
+    border-radius: 30px;
+    border: solid 1px #666666;
+    color: #ffffff;
+    font-size: 14px;
+    height: 30px;
+    margin-left: 10px;
+    padding: 6px;
+    text-align: center;
+    width: 30px;
+}
+/*** Font Awesome: End ***/
+
+/*** Kendo: Begin ***/
+.k-grid td a {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.k-grid tr:hover {
+    background-color: #2E99fa;
+    background-image: none;
+    color: #ffffff;
+}
+
+    .k-grid tr:hover a {
+        color: #ffffff;
+    }
+/*** Kendo: End ***/
+
+/*** Layout: Begin ***/
+.content {
+    background: #ffffff;
+}
+
+.col-header {
+    background: #888;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.col-primera {
+    background: #f8f8f8;
+    border-right: solid 1px #e7e7e7;
+} 
+
+.col-segunda {
+    border-right: solid 1px #e7e7e7;
+}
+
+.fantasma {
+    border: solid 1px #cccccc;
+    padding: 30px;
+    position: relative;
+}
+
+.fantasma:hover input {
+    transition: all 0.4s ease-in-out;
+    transform: scale(0.9);
+}
+
+.fantasma:hover .enviar {
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-flex-align: center;
+    background: #337ab7;
+    cursor: pointer;
+    color: #ffffff;
+    content: "ENVIAR";
+    display: flex;
+        display: -webkit-flexbox;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+    opacity: 0.8;
+    position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.fantasma:hover .enviar:before {
+    content: "ENVIAR";
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+}
+
+.vista-minuta {
+    height: 70%;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.login {
+    float: right;
+}
+
+#usuarioLoggeado {
+    color: #666666;
+    padding-top: 4px;
+}
+
+.partialCentrado {
+    margin-left:50px;
+}
+/*** Layout: End ***/

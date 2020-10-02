@@ -1,0 +1,55 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model MinuteroWeb.Views.Models.MinutasIndexViewModel
+<div class="container-fluid full-height no-padding">
+    <div class="container-fluid no-padding">
+        <div class="row no-margin" id="navbar">
+            <nav class="navbar navbar-default">
+                <div class="container no-padding">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Minutero</a>
+                    </div>
+                    <div class="col-sm-6 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav nav-pills">
+                            <li id="btnEstado" role="presentation" class="active"><a href="#">Estado</a></li>
+                            @if (Model.usuarioLoggeadoEsEncargado)
+                            {
+                                <li id="btnGeneracionMinuta" role="presentation"><a href="#">Generar Minuta</a></li>
+                            }
+                        </ul>
+                    </div>
+                    <div class="login" id="usuarioLoggeado">
+                        Logueado como: <strong>@Model.estado.usuarioLoggeado</strong><i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container content full-height">
+        <div class="row full-height" id="partialEstado">
+            @{Html.RenderPartial("Estado", Model.estado);}
+        </div>
+        <div class="row full-height" id="partialGeneracionMinuta" style="display: none;">
+            @{Html.RenderPartial("GeneracionMinuta", Model.generacionMinuta);}
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript" src="~/Scripts/Minutas/MinutasIndex.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        MinutasIndex.initialize('@Model.getMinutaURL', '@Model.getUsuariosCopadosURL', '@Model.getUsuariosEnFaltaURL',
+                                '@Model.sendMinutaURL', '@Model.sendFantasmaURL', '@Model.marcarSendLaterURL', '@Model.marcarStudyDayURL',
+                                '@Model.marcarSickURL', '@Model.marcarLicenseURL', '@Model.marcarHolidaysURL', '@Model.usuarioLoggeadoEsEncargado');
+    });
+    </script>
+}
+

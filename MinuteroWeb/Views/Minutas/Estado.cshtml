@@ -1,0 +1,42 @@
+﻿@model MinuteroWeb.Views.Models.EstadoViewModel
+<div class="col-primera col-sm-2 full-height">
+    <div class="row col-header">
+        <div class="col-sm-12">
+            <h5>ENCARGADO</h5>
+        </div>
+    </div>
+    <span>@Model.encargado</span>
+    @if (Model.encargado == Model.usuarioLoggeado)
+    {
+        <button type='button' class='btn btn-primary' id="botonActualizar"> Actualizar Usuarios </button>
+    }
+</div>
+<div class="col-segunda col-sm-7 full-height">
+    <div class="row col-header">
+        <div class="col-sm-12">
+            <h5>USUARIOS</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="green"><strong>Usuarios Copados</strong></p>
+            <div id="grillaUsuariosCopados"></div>
+        </div>
+        <div class="col-sm-7">
+            <p class="red"><strong>Usuarios Faltantes</strong></p>
+            <div id="grillaUsuariosEnFalta"></div>
+        </div>
+    </div>
+</div>
+<div class="col-tercera col-sm-3 full-height">
+    <div class="row col-header">
+        <div class="col-sm-12">
+            <h5>ENVIAR RECORDATORIO</h5>
+        </div>
+    </div>
+    <div class="row" id="fantasmaCentrado">
+        <div class="col-sm-12">
+            <div class="fantasma"><input type="image" src="~/Images/MinutasOrDie.jpg" name="enviarMinutaOrDie" class="img-responsive" id="enviarMinutaOrDie" /><span class="enviar"></span></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+﻿body {
+    background-image: url(http://cronoforvm.com/filedata/fetch?id=32196&d=1415296900);
+    background-repeat: no-repeat;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+
+#fraseDelDia {
+    margin-right:20px;
+}
+
+#frontCard {
+    position:relative;
+    margin-top: 150px;
+    width: 850px;
+    height: 500px;
+}
+
+
+#loginForm {
+    float:left;
+    margin-left:150px;
+    margin-top:30px;
+    padding:10px;
+    width: 200px;
+    height: 120px;
+}
+#contenidoForm {
+    padding:10px;
+    float:left;
+}
+
+#textoBienvenida {
+    float:right;
+    padding:10px;
+    background:transparent;
+    width: 450px;
+    height: 120px;
+}
+
+h3 {
+    color:white;
+    text-align:left;
+}
+
+h5 {
+    color:white;
+    text-align:left;
+    font-size:medium;
+}

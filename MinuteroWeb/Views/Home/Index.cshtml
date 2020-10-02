@@ -1,0 +1,41 @@
+﻿@model MinuteroWeb.Views.Models.LoginViewModel
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Styles.Render("~/Content/Login.css")
+    <div id="contenedor"> 
+        <div id="navbar">
+            <nav class="navbar navbar-default navbar-fixed-top ">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#">
+                  </a>
+                </div>
+                <div id="fraseDelDia">
+                    <p class="navbar-text navbar-right" > @Model.fraseDelDia</p>
+                    <p class="navbar-text navbar-right"> Frase del Dia: </p>
+                </div>
+              </div>
+            </nav>
+        </div>
+        <div id="frontCard"> 
+            <div class="panel panel-info" id="loginForm">
+                <div id="contenidoForm">
+                    @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+                    {
+                        <p> @Html.TextBoxFor(login => login.userName, new {@class="form-control", id="inputUsername", placeholder="Usuario", required="required"}) </p>
+
+                        <input class="btn btn-primary" type="submit" value="Ingresar" />
+                    }
+                </div>
+            </div>
+            <div id="textoBienvenida">
+                <h3> <strong>El tiempo es dinero, usá Minutero! </strong></h3>
+                <h5>Loggeate con tu usuario para acceder al estado de las minutas del día de hoy.
+                <br />
+                Y si sos el encargado de estas dos semanas podras enviar fantasmas a todos hasta recibir las minutaas para juntarlas y enviarlas.
+                </h5>
+            </div>
+        </div>
+    </div>
