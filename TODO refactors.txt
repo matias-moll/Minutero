@@ -1,5 +1,0 @@
-Refactors:
-
-- Pasar el objeto con JSON.encode al llamar al metodo initialize de Javascript.
-
-- Separar funcionalidad de cada pantalla en un archivo javascript diferente.

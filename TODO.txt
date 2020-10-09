@@ -1,0 +1,24 @@
+Mas detalles en el dashboard de trello.
+
+TODO:
+- Migrar todo el minutero desktop a web
+- Agregar seguridad (hacer un login en serio) (incluye cambios en la base y modelo)
+
+
+Deseables:
+- Rearmar la UI web con angular.
+- Armar WebAPI
+
+Ultimo (bonus points)
+- Configurar plazos de licencias/marcas
+
+
+--------------------------------------------------------------------------------------------------
+Hasta aqui vamos a hacer.
+
+
+- Migrar a otra tecnologia el backend (muere en stack feo)
+
+
+
+
